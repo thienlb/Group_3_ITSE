@@ -1,0 +1,172 @@
+<!---------------------------------------------------Khung-------------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+		</title>
+	</head>
+	<body>
+		<p></p><!--Doan van ban-->
+		<br></br><!--Xuong dong-->
+		<h1></h1><!--Tieu de-->
+		<div></div><!--Box-->
+	</body>
+</html>
+
+<!-----------------------------------------------------Ky tu dat biet----------------------------------------------------->
+&=&amp;
+>=&gt;
+<=&lt;
+" "=&nbsp;
+<!------------------------------------Hình-------------------------------------------------------------------------------->
+<img> </img><!--Chen hinh-->
+Src "Link anh"
+alt <!--hien khi khong load duoc anh-->
+<area shape="Hinh dang" coords=" Toan do cac dinh" href="Link">
+
+<a href="Lien ket" target="_blank/_self">Hien thi</a><!--_blank: mo cua so moi/_self: de len cua so cu-->
+
+<!---------------------------------------------------------------Video------------------------------------------------------>
+<video controls autoplay><!--Them Video-->
+	<source src="Link" type="Dinh dang"/>
+</video>
+<!----------------------------------------------------------------Table---------------------------------------------------->
+	<table>
+		<tr><!--dòng-->
+			<th calspans="2"(rowspan="2")<!--trộn 2 cột thành 1(2 dòng thành 1)-->>ô tiêu đề</th><!--ô của dòng tiêu đề-->
+		</tr>
+		<tr>
+			<td>ô dữ liệu</td><!--Ô của dòng BT-->
+			<td>ô dữ liệu</td>
+			<td>ô dữ liệu</td>
+		</tr>
+		<tr>
+			<td>ô dữ liệu</td>
+			<td>ô dữ liệu</td>
+			<td>ô dữ liệu</td>
+		</tr>
+	</table>
+	
+<!-----------------------------------------------------------------List---------------------------------------------------->
+	<ol(ul) style="link-style-type:property's value"/><!--Thay ký hiệu đầu dòng-->
+	<!-------------------------------------------------------------Unoder-------------------------------------------------->
+	<ul>
+		<li> vi du 1</li>
+		<li> vi du 2</li>
+		<li> vi du 3</li>
+		<li> vi du 4</li>
+		<li> vi du 5</li>
+	</ul
+	<!-----------------------------------------------------------Oder----------------------------------------------------->
+	<ol>
+		<li> vi du 1</li>
+		<li> vi du 2</li>
+		<li> vi du 3</li>
+		<li> vi du 4</li>
+		<li> vi du 5</li>
+	</ol>
+<!----------------------------------------------------------Mau------------------------------------------------------------>
+<p style="color:"Mau mau""></p><!--Hex-->
+<p style="color:""></p><!--RBG-->
+<p style="color:" ten mau""></p><!--Ten mau-->
+
+<!-------------------------------------------------       CSS      -------------------------------------------------------->
+
+<style>
+	mane{color:red<!--Mau-->
+		font-size:[number]px<!--Kich co font-->
+		font-weight:[number]px<!--In dam(100-900)-->
+		text-decoration
+		text-indent<!---->
+		text-transform<!--chinh toan bo doan(hoa,thuong hoa dau dong) -->
+		text-spacing<!--Khoan cach gia cac tu-->
+		font-family<!--chon font-->
+		font-variant<!--Chuyen chu thuong thanh chu in(van giu nguyen kich co)-->
+		float <!--day va nhuong cho cac doi tuong khac-->
+		margin<!-- khoan cach le cua doi tuong voi cac doi tuong khac-->
+		padding<!--Cho doi tuong ben trong-->
+		span<!--bao quanh 1 doan text ma khong lam anh huong den hien trang cua no-->
+		clear <!--NGan khong cho bi anh huong boi cac thanh phan ben tren-->
+		overflow <!--không cho văn bản thay đổi kích thước box(hidden:che phan trang,scroll: hien thanh cuon doc va ngan,auto:tu dong chinh)-->
+		position<!--relative/absolute-->
+		cursor<!--Thay doi dinh dang cua con tro-->
+	}
+	<h1 padding:10px></h1> <!--Cach deu cac bien 10px-->
+	
+</style>
+
+<!--Link CSS tu ben ngoai-->
+<Link rel="stylesheet" href="duong dan file.css">
+
+<!----------------------------------------------------------Possition----------------------------------------------------------->
+Relative(chiếm chỗ)
+Absolute(không chiếm chỗ)
+z-index(thành phần có số lớn đè thanh phần chứa số nhỏ)
+
+<!--------------------------------------------------------IFrames--------------------------------------------------------------->
+<iframe></iframe><!--nhung cac trang khac-->
+<!--------------------------------------------------------Forms----------------------------------------------------------------->
+<form action="#" method="post/get"><!--Get(Goi cac thong tin hien tren thanh dia chi)/post(Goi am tham)-->
+	<input type="text" name="title"/><!--Text-->
+	<input type="password" name="title"/><!--khong hien thi ky tu danh vao-->
+	<input type="button" name="title"/><!--Tao button-->
+	<input type="submit" name="title"/>
+	<input type="reset" name="title"/>
+	<input type="cancel" name="title"/>
+</form>
+<!------------------------------Ding dang------------------------------------->
+Dinh dang theo Tap
+<p>sdasdsad</p>
+	khai bao
+		p{
+			color="";
+			.............
+		}
+
+Dinh dang theo ID(Dung cho 1 doi tuong)
+<p id="name">sdasdsad</p>
+	khai bao
+		#name{
+			color="";
+			.............
+		}
+
+Dinh dang theo Class(Dung cho nhieu doi tuong)
+<p class="name">sdasdsad</p>
+	khai bao
+		.name{
+			color="";
+			.............
+		}
+		
+Dinh dang thao Pseudo-class
+<p>sdasdsad</p>
+	khai bao
+		name:[thuoc tinh](hover,...){
+			color="";
+			.............
+		}
+<!-------------------------------------------------------------Nen------------------------------------------------------->
+#background{
+            background-image:url("backgroundIMG.jpg");<!--Dat hinh lam nen-->
+            background-repeat: no-repeat;<!--Lap lai hinh-->
+            background-attachment: fixed; <!--Giu nguyen hinh khi cuon-->
+        }
+		
+<!---------------------------------------------------------HTML5 BOX------------------------------------------------------------>
+<header></header>
+<nav></nav>
+<section></section><!--1 phan nho cua article-->
+<article></article>
+<aside></aside>
+<footer></footer>
+<details></details>
+<summary></summary>
+<!----------------------------------------------------------Responsive--------------------------------------------------------->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!------------------------------Bootstrap------------------------------------->
+	<!------------------------------CSS Less-------------------------------------->
+		@media screen and (max-width: 1024px){
+			..........................
+		}
